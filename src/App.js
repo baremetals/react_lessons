@@ -1,27 +1,20 @@
 import React, { Component } from 'react';
-import Products from './Products';
-import { Button } from 'react-bootstrap';
-import Rating from './Rating';
+import GitHub from './GitHub';
+// import Products from './Products';
+// import JumboTron from './JumboTron';
+// import UserForm from './UserForm';
+;
 
 class App extends Component {
 
-  formatName(user){ return user.firstName + ' ' + user.lastName; }
+  // formatName(user){ return user.firstName + ' ' + user.lastName; }
 
   render() {
-    const isValid = true;
-    const user ={ firstName:'Greg', lastName:'Lim' };
 
     return (
-      <div>
+      <div className="App">
         <h1>
-          Hello, {this.formatName(user)}
-          <Products />
-          <Rating rating="1" />
-          <Rating rating="2" />
-          <Rating rating="3" />
-          <Rating rating="4" />
-          <Rating rating="5" />
-          <Button variant="primary" disabled={!isValid}>Default</Button>
+          <GitHub />
         </h1>
       </div>
     )
